@@ -1,0 +1,16 @@
+.photo-me {
+  width: 100%;
+  img {
+    animation: fadeInLeft 2.5s forwards;
+    float: right;
+    width: 300px;
+    margin-right: 10%;
+    border-radius: 10%;
+    border: 1px solid #fff;
+    box-shadow: 0 0 0 5px #fff;
+    transition: all 0.3s ease-in-out;
+      &:hover {
+    box-shadow: 0 0 0 5px black, 0 0 0 10px darkcyan;
+    }
+  }
+}
