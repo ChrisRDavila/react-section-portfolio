@@ -1,12 +1,15 @@
 .home-page {
 
+  // top: 50%;
+  // left:12%;
+
   .text-zone {
     position: absolute;
     left: 10%;
     top: 50%;
     transform: translateY(-50%);
-    width: 80%;
-    height:90%;
+    width: 40%;
+    max-height:90%;
 
   }
   h1 {
@@ -16,7 +19,28 @@
     font-family: Coolvetica;
     font-weight: 400;
 
+    &::before {
+      content: '<h1>';
+      font-family: 'Coolvetica';
+      color: burlywood;
+      font-size: 18px;
+      position: absolute;
+      margin-top: -40px;
+      left: 15px;
+      opacity: 0.6;
+    }
 
+    &::after {
+      content: '<h1/>';
+      font-family: "Coolvetica";
+      color: burlywood;
+      font-size: 18px;
+      position: absolute;
+      margin-top: 18px;
+      margin-left: 20px;
+      animation: fadeIn 1s 1.7s backwards;
+      opacity: 0.6;
+    }
 
     img {
       width: 40px;
@@ -43,21 +67,21 @@
   }
 
   .flat-button {
-    color: #ffd700;
+    color: burlywood;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 4px;
     font-family: sans-serif;
     text-decoration: none;
     padding: 10px 18px;
-    border: 1px solid #ffd700;
+    border: 1px solid burlywood;
     margin-top: 25px;
     float: left;
     animation: fadeIn 1s 1.8s backwards;
     white-space: nowrap;
 
     &:hover {
-      background: #ffd700;
+      background: burlywood;
       color: #333;
     }
 

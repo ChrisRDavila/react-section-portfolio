@@ -1,5 +1,5 @@
 import './index.scss';
-import HomeRLogo from '../../assets/images/logo-r.jpeg';
+import LogoTitle from '../../assets/images/logo-r.jpeg';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -7,8 +7,11 @@ const Home = () => {
     <div className='container home-page'>
         <div className='text-zone'>
           <h1>Hi, <br/> I'm</h1>
-          <img src={HomeRLogo} alt='home-logo-R' />
-          oss Davila
+          <img 
+          src={LogoTitle} 
+          alt='developer' 
+          />
+          <p>oss Davila</p>
           <br/>
           <h2>Full-stack developer / Chef / Student / Musician</h2>
             <Link to='/contact' className='flat-button'>
